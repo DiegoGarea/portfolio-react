@@ -28,7 +28,6 @@ const ProjectCard = ({
         glareBorderRadius="10px"
         tiltMaxAngleX={10}
         tiltMaxAngleY={10}
-        gyroscope={true}
       >
         <div className="relative w-full h-[230px]">
           <div
