@@ -1,28 +1,32 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
+  blueplanet,
+  moon,
+  earth,
+  sun,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
-  mongodb,
   git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  planet1,
+  planet2,
+  planet3,
+  planet4,
+  moviesearch,
+  amazonclone,
+  metaverse,
+  modernbank,
+  shirt,
+  atm,
+  rockpaperscissors,
+  youtube,
   threejs,
+  instagram,
+  mygithub,
+  linkedin,
 } from '../assets';
 
 export const navLinks = [
@@ -31,8 +35,12 @@ export const navLinks = [
     title: 'About',
   },
   {
-    id: 'work',
-    title: 'Work',
+    id: 'Experience',
+    title: 'Experience',
+  },
+  {
+    id: 'Projects',
+    title: 'Projects',
   },
   {
     id: 'contact',
@@ -43,19 +51,19 @@ export const navLinks = [
 const services = [
   {
     title: 'Web Developer',
-    icon: web,
+    icon: blueplanet,
   },
   {
-    title: 'React Native Developer',
-    icon: mobile,
-  },
-  {
-    title: 'Backend Developer',
-    icon: backend,
+    title: 'React Developer',
+    icon: earth,
   },
   {
     title: 'Content Creator',
-    icon: creator,
+    icon: sun,
+  },
+  {
+    title: 'Continuous Learning',
+    icon: moon,
   },
 ];
 
@@ -100,150 +108,224 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: starbucks,
-    iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
-    icon: tesla,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: shopify,
-    iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'Frontend Developer',
-    company_name: 'Meta',
-    icon: meta,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Present',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-];
+    title: '- HTML -',
 
-const testimonials = [
-  {
-    testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
+    icon: planet1,
+    iconBg: '#383E56',
+    points: [
+      "I've refined my skills in crafting robust semantic structures that enhance user experiences and bolster SEO. HTML serves as the cornerstone for constructing solid webpage structures. These proficiencies, among others, play a pivotal role in my journey as a web developer.",
+    ],
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
+    title: '- CSS & Tailwind -',
+
+    icon: planet2,
+    iconBg: '#E6DEDD',
+    points: [
+      "With a nice grasp of CSS and and understanding of Tailwind, I've continuously up to create refined web designs that enhance user experiences. These skills are integral to my ongoing journey in web development, working seamlessly alongside my HTML knowledge. As an advocate of perpetual learning, I'm dedicated to staying current with industry trends and continuously bolstering my CSS and Tailwind capabilities.",
+    ],
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg',
+    title: '- Javascript -',
+
+    icon: planet3,
+    iconBg: '#383E56',
+    points: [
+      "With a solid understanding of JavaScript, I've consistently endeavored to develop dynamic web applications that engage users effectively. These skills are an essential part of my journey in web development.  I remain dedicated to keeping up with evolving technologies, continuously enhancing my JavaScript skills, and crafting innovative web solutions.",
+    ],
+  },
+  {
+    title: 'Frontend',
+
+    icon: planet4,
+    iconBg: '#E6DEDD',
+    points: [
+      'As a Front-End Developer, I have skills in creating web applications with React.js, employing a diverse range of technologies such as Framer Motion, Three.js, React Router, Canvas, Tilt, Supabase, and many others. My primary focus on implementing responsive designs and ensuring cross-browser compatibility to deliver exceptional user experiences. I continually explore and learn to enhance my skills every day to become a better developer.',
+    ],
   },
 ];
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: '3D Shirt Page',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'React-powered web app with Framer Motion for animations, and Tailwind for responsive design and styling. This technological tools results in a stunning visual experience.',
     tags: [
       {
-        name: 'react',
+        name: 'React',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'Tailwind',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'FramerMotion',
         color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: shirt,
+    source_code_link:
+      'https://github.com/DiegoGarea/reactjs-3d-Shirt-threejs-valtio-tailwind',
+    link_live:
+      'https://diegogarea.github.io/reactjs-3d-Shirt-threejs-valtio-tailwind/',
   },
   {
-    name: 'Job IT',
+    name: 'Metaverse',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      'Next.js-powered web app with Framer Motion used for animation and Tailwind used for responsive & styling. These technologie tools make it look amazing',
     tags: [
       {
-        name: 'react',
+        name: 'Next.js',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'Tailwind',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'FramerMotion',
         color: 'pink-text-gradient',
       },
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
+    image: metaverse,
+    source_code_link: 'https://github.com/DiegoGarea/NextJs-metaverse',
+    link_live: 'https://diegogarea.github.io/NextJs-metaverse/',
   },
   {
-    name: 'Trip Guide',
+    name: 'Movie Search',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'React-powered web app with CSS and a API, explore an external movie database enjoying an intuitive interface to discover  films and TV series',
     tags: [
       {
-        name: 'nextjs',
+        name: 'React',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'API',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'CSS',
         color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: moviesearch,
+    source_code_link: 'https://github.com/DiegoGarea/react-movie-api/',
+    link_live: 'https://diegogarea.github.io/react-movie-api/',
+  },
+  {
+    name: 'Amazon Clone',
+    description:
+      'Javascript-powered web app with CSS and HTML. The project aims to replicate the Amazon web interface and basic functionality.',
+    tags: [
+      {
+        name: 'Javascript',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'CSS',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'HTML',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: amazonclone,
+    source_code_link: 'https://github.com/DiegoGarea/amazon-clone',
+    link_live: 'https://diegogarea.github.io/amazon-clone/',
+  },
+  {
+    name: 'Bank',
+    description:
+      'React-powered web app with Tailwind used for responsive & styling - this technology tools make it elegant and nice looking modern design',
+    tags: [
+      {
+        name: 'React',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Tailwind',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: modernbank,
+    source_code_link: 'https://github.com/DiegoGarea/reactjs-bank-modern',
+    link_live: 'https://diegogarea.github.io/reactjs-bank-modern/',
+  },
+  {
+    name: 'ATM simulator',
+    description:
+      'Javascript-powered web app with CSS, interactive ATM simulation experience withdrawals, deposits, bill payments, balances, and more at your fingertips.',
+    tags: [
+      {
+        name: 'Javascript',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'CSS',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: atm,
+    source_code_link: 'https://github.com/DiegoGarea/VanillaJS-ATM-project',
+    link_live: 'https://diegogarea.github.io/VanillaJS-ATM-project/',
+  },
+  {
+    name: 'Rock Paper Scissors',
+    description:
+      'Javascript-powered Rock Paper Scissors, choose your move or let it play automatically. Reset the score button and localstorage to save the score',
+    tags: [
+      {
+        name: 'Javascript',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'CSS',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: rockpaperscissors,
+    source_code_link: 'https://github.com/DiegoGarea/Rock-Paper-Scissors',
+    link_live: 'https://diegogarea.github.io/Rock-Paper-Scissors/',
+  },
+  {
+    name: 'Rock Paper Scissors',
+    description:
+      'This YouTube-clone exemplifies the dynamic fusion of CSS and HTML, crafting visually stunning websites with only this two powerfull tools.',
+    tags: [
+      {
+        name: 'HTML',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'CSS',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: youtube,
+    source_code_link: 'https://github.com/DiegoGarea/HTML-CSS-YouTube-Clone',
+    link_live: 'https://diegogarea.github.io/HTML-CSS-YouTube-Clone/',
   },
 ];
 
-export {services, technologies, experiences, testimonials, projects};
+const socialNetworks = [
+  {
+    title: 'github',
+    icon: mygithub,
+    link: 'https://github.com/DiegoGarea',
+  },
+  {
+    title: 'instagram',
+    icon: instagram,
+    link: 'https://www.instagram.com/diego_garea/',
+  },
+  {
+    title: 'linkedin',
+    icon: linkedin,
+    link: 'https://www.linkedin.com/in/diego-garea-59307228b/',
+  },
+];
+
+export {services, technologies, experiences, projects, socialNetworks};

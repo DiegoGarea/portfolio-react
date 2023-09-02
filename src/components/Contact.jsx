@@ -3,7 +3,7 @@ import {motion} from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
 import {styles} from '../styles';
-import {EarthCanvas} from './canvas';
+import {SatelliteCanvas} from './canvas';
 import {SectionWrapper} from '../hoc';
 import {slideIn} from '../utils/motion';
 
@@ -66,7 +66,6 @@ const Contact = () => {
         variants={slideIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
-        <p className={styles.heroSubText}>Get in touch</p>
         <h3 className={`${styles.heroHeadText} text-[#5f158a]`}>Contact.</h3>
 
         <form
@@ -123,7 +122,7 @@ const Contact = () => {
         variants={slideIn('right', 'tween', 0.2, 1)}
         className="xl:flex-1 xl:h-auto xl:w-auto mg:h-[550px] h-[350px]"
       >
-        <EarthCanvas />
+        <SatelliteCanvas />
       </motion.div>
     </div>
   );

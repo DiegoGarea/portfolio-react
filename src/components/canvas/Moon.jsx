@@ -5,20 +5,20 @@ import {OrbitControls, Preload, useGLTF} from '@react-three/drei';
 import CanvasLoader from '../Loader';
 
 const Moon = ({isMobile}) => {
-  const Moon = useGLTF('./desktop_pc/scene.gltf');
+  const Moon = useGLTF('./moon/planet.glb');
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor="black" />
-      <pointLight intensity={1} />
-      <spotLight
-        position={[0, 1, 8]}
+      <hemisphereLight intensity={5} groundColor="white" />
+      {/* <pointLight intensity={10} /> */}
+      {/* <spotLight
+        position={[10, 1, 8]}
         angle={2}
         penumbra={1}
-        intensity={400}
+        intensity={300}
         castShadow
         shadow-mapSize={1024}
-      />
+      /> */}
       <primitive
         object={Moon.scene}
         scale={isMobile ? 0.012 : 0.022}
