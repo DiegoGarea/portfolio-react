@@ -6,6 +6,8 @@ import {styles} from '../styles';
 import {SatelliteCanvas} from './canvas';
 import {SectionWrapper} from '../hoc';
 import {slideIn} from '../utils/motion';
+import {StarsCanvas} from '../components';
+import {useMobileCheck} from '../utils/isMobileCheck';
 
 const Contact = () => {
   const formRef = useRef();
@@ -15,6 +17,7 @@ const Contact = () => {
     message: '',
   });
   const [loading, setLoading] = useState(false);
+  const isMobile = useMobileCheck();
 
   const handleChange = (e) => {
     const {name, value} = e.target;
@@ -118,12 +121,24 @@ const Contact = () => {
         </form>
       </motion.div>
 
-      <motion.div
-        variants={slideIn('right', 'tween', 0.2, 1)}
-        className="xl:flex-1 xl:h-auto xl:w-auto mg:h-[550px] h-[350px]"
-      >
-        <SatelliteCanvas />
-      </motion.div>
+      {isMobile ? (
+        <div
+          variants={slideIn('right', 'tween', 0.2, 1)}
+          className="xl:flex-1 xl:h-auto xl:w-auto mg:h-[550px] h-[350px]"
+        >
+          <SatelliteCanvas />
+        </div>
+      ) : (
+        <>
+          <div
+            variants={slideIn('right', 'tween', 0.2, 1)}
+            className="xl:flex-1 xl:h-auto xl:w-auto mg:h-[550px] h-[350px]"
+          >
+            <SatelliteCanvas />
+          </div>
+          <StarsCanvas />
+        </>
+      )}
     </div>
   );
 };

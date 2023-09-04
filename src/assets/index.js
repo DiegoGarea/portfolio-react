@@ -1,4 +1,6 @@
-import logo from './logo.svg';
+import logo from './logo.png';
+import gifmoon from './gifmoon.mp4';
+import giftech from './giftech.mp4';
 import moon from './moon.png';
 import earth from './earth.png';
 import blueplanet from './blueplanet.png';
@@ -8,18 +10,15 @@ import menu from './menu.svg';
 import close from './close.svg';
 
 import css from './tech/css.png';
-import docker from './tech/docker.png';
-import figma from './tech/figma.png';
 import git from './tech/git.png';
 import html from './tech/html.png';
 import javascript from './tech/javascript.png';
-import mongodb from './tech/mongodb.png';
+
 import nodejs from './tech/nodejs.png';
 import reactjs from './tech/reactjs.png';
-import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
-import typescript from './tech/typescript.png';
 import threejs from './tech/threejs.png';
+import supabase from './tech/supabase.png';
 
 import planet4 from './planets/planet4.png';
 import planet3 from './planets/planet3.png';
@@ -41,6 +40,8 @@ import linkedin from './socialnetworks/linkedin.png';
 
 export {
   logo,
+  gifmoon,
+  giftech,
   moon,
   earth,
   blueplanet,
@@ -49,18 +50,14 @@ export {
   menu,
   close,
   css,
-  docker,
-  figma,
   git,
   html,
   javascript,
-  mongodb,
   nodejs,
   reactjs,
-  redux,
   tailwind,
-  typescript,
   threejs,
+  supabase,
   planet1,
   planet2,
   planet3,

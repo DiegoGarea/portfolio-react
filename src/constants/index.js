@@ -4,7 +4,7 @@ import {
   earth,
   sun,
   javascript,
-  typescript,
+  supabase,
   html,
   css,
   reactjs,
@@ -81,28 +81,28 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: 'TypeScript',
-    icon: typescript,
-  },
-  {
     name: 'React JS',
     icon: reactjs,
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: tailwind,
   },
   {
     name: 'Node JS',
     icon: nodejs,
   },
   {
-    name: 'Three JS',
-    icon: threejs,
+    name: 'Tailwind CSS',
+    icon: tailwind,
   },
   {
     name: 'git',
     icon: git,
+  },
+  {
+    name: 'Supabase',
+    icon: supabase,
+  },
+  {
+    name: 'Three JS',
+    icon: threejs,
   },
 ];
 

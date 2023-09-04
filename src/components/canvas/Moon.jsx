@@ -1,57 +1,28 @@
-import {Suspense, useEffect, useState} from 'react';
+import {Suspense} from 'react';
 import {Canvas} from '@react-three/fiber';
 import {OrbitControls, Preload, useGLTF} from '@react-three/drei';
 
 import CanvasLoader from '../Loader';
 
-const Moon = ({isMobile}) => {
+const Moon = () => {
   const Moon = useGLTF('./moon/planet.glb');
 
   return (
     <mesh>
       <hemisphereLight intensity={5} groundColor="white" />
-      {/* <pointLight intensity={10} /> */}
-      {/* <spotLight
-        position={[10, 1, 8]}
-        angle={2}
-        penumbra={1}
-        intensity={300}
-        castShadow
-        shadow-mapSize={1024}
-      /> */}
-      <primitive
-        object={Moon.scene}
-        scale={isMobile ? 0.012 : 0.022}
-        position={isMobile ? [0, -2, 0] : [0, -2, 0]}
-      />
+
+      <primitive object={Moon.scene} scale={0.022} position={[0, -2, 0]} />
     </mesh>
   );
 };
 
 const MoonCanvas = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 500px)');
-    setIsMobile(mediaQuery.matches);
-
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    };
-
-    mediaQuery.addEventListener('change', handleMediaQueryChange);
-
-    return () => {
-      mediaQuery.removeEventListener('change', handleMediaQueryChange);
-    };
-  }, []);
-
   return (
     <Canvas
       frameloop="always"
       shadows
       camera={{position: [25, 3, 5], fov: 25}}
-      gl={{preserveDrawingBuffer: true}}
+      gl={{preserveDrawingBuffer: false}}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
@@ -62,7 +33,7 @@ const MoonCanvas = () => {
           enablePan={false}
         />
 
-        <Moon isMobile={isMobile} />
+        <Moon />
       </Suspense>
 
       <Preload all />
