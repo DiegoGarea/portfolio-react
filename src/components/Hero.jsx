@@ -1,10 +1,11 @@
 import {motion} from 'framer-motion';
+import {fadeIn} from '../utils/motion';
 
 import {styles} from '../styles';
 import {MoonCanvas} from './canvas';
 import {StarsCanvas} from '../components';
-import Planet from './mobile-gif/Planet';
 import {useMobileCheck} from '../utils/isMobileCheck';
+import Planet from './mobile-gif/Planet';
 
 const Hero = () => {
   const isMobile = useMobileCheck();
@@ -14,7 +15,11 @@ const Hero = () => {
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex items-start gap-5`}
       >
-        <div>
+        <motion.div
+          variants={fadeIn('', '', 0.2, 5)}
+          initial="hidden"
+          whileInView="show"
+        >
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hello, I'm <span className="text-[#4b158a]">Diego</span>
           </h1>
@@ -22,7 +27,7 @@ const Hero = () => {
             Developer <br className="sm:block hidden" />{' '}
             <span className="text-[#5f158a]">|</span> web applications
           </p>
-        </div>
+        </motion.div>
       </div>
       {isMobile ? (
         <div className="self-center mt-[120px]">
@@ -61,3 +66,9 @@ const Hero = () => {
 };
 
 export default Hero;
+
+<motion.footer
+  variants={fadeIn('', '', 0.25, 1)}
+  initial="hidden"
+  whileInView="show"
+></motion.footer>;

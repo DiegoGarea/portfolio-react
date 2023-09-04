@@ -5,10 +5,9 @@ import {styles} from '../styles';
 import {github} from '../assets';
 import {SectionWrapper} from '../hoc';
 import {projects} from '../constants';
-import {fadeIn, textVariant} from '../utils/motion';
+// import {fadeIn} from '../utils/motion';
 
 const ProjectCard = ({
-  index,
   name,
   description,
   tags,
@@ -79,7 +78,7 @@ const Works = () => {
 
       <div className="w-full flex">
         <p
-          variants={fadeIn('', '', 0.1, 1)}
+          // variants={fadeIn('', '', 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Presenting a selection of my projects that show my experience. Each

@@ -1,5 +1,4 @@
 import Tilt from 'react-parallax-tilt';
-import {motion} from 'framer-motion';
 
 import {styles} from '../styles';
 import {services} from '../constants';
@@ -19,7 +18,7 @@ const ServiceCard = ({index, title, icon}) => {
       tiltMaxAngleY={15}
       scale={1.07}
     >
-      <motion.div
+      <div
         variants={fadeIn('right', 'spring', 0.3 * index, 0.75)}
         className="w-full bg-gradient-to-r from-indigo-600 p-[1px] rounded-[20px] shadow-card hover:bg-indigo-600"
       >
@@ -29,7 +28,7 @@ const ServiceCard = ({index, title, icon}) => {
             {title}
           </h3>
         </div>
-      </motion.div>
+      </div>
     </Tilt>
   );
 };
@@ -37,12 +36,12 @@ const ServiceCard = ({index, title, icon}) => {
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
+      </div>
 
-      <motion.p
+      <p
         variants={fadeIn('', '', 0.3, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[28px]"
       >
@@ -51,7 +50,7 @@ const About = () => {
         development. My dedication to staying updated with the latest industry
         trends ensures that I bring fresh and innovative approaches to every
         project.
-      </motion.p>
+      </p>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (

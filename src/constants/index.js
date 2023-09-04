@@ -9,7 +9,7 @@ import {
   css,
   reactjs,
   tailwind,
-  nodejs,
+  nextjs,
   git,
   planet1,
   planet2,
@@ -85,16 +85,16 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: 'Node JS',
-    icon: nodejs,
-  },
-  {
     name: 'Tailwind CSS',
     icon: tailwind,
   },
   {
     name: 'git',
     icon: git,
+  },
+  {
+    name: 'Next JS',
+    icon: nextjs,
   },
   {
     name: 'Supabase',
@@ -291,7 +291,7 @@ const projects = [
     link_live: 'https://diegogarea.github.io/Rock-Paper-Scissors/',
   },
   {
-    name: 'Rock Paper Scissors',
+    name: 'Youtube Clone',
     description:
       'This YouTube-clone exemplifies the dynamic fusion of CSS and HTML, crafting visually stunning websites with only this two powerfull tools.',
     tags: [
@@ -306,6 +306,24 @@ const projects = [
     ],
     image: youtube,
     source_code_link: 'https://github.com/DiegoGarea/HTML-CSS-YouTube-Clone',
+    link_live: 'https://diegogarea.github.io/HTML-CSS-YouTube-Clone/',
+  },
+  {
+    name: 'Youtube Clone',
+    description:
+      'This YouTube-clone exemplifies the dynamic fusion of CSS and HTML, crafting visually stunning websites with only this two powerfull tools.',
+    tags: [
+      {
+        name: 'HTML',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'CSS',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: youtube,
+    source_code_link: 'https://github.com/DiegoGarea/React-Supabase-fetch',
     link_live: 'https://diegogarea.github.io/HTML-CSS-YouTube-Clone/',
   },
 ];

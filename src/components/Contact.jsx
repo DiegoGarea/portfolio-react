@@ -1,11 +1,11 @@
 import {useState, useRef} from 'react';
-import {motion} from 'framer-motion';
+// import {motion} from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
 import {styles} from '../styles';
 import {SatelliteCanvas} from './canvas';
 import {SectionWrapper} from '../hoc';
-import {slideIn} from '../utils/motion';
+// import {slideIn} from '../utils/motion';
 import {StarsCanvas} from '../components';
 import {useMobileCheck} from '../utils/isMobileCheck';
 
@@ -65,10 +65,7 @@ const Contact = () => {
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
-      <motion.div
-        variants={slideIn('left', 'tween', 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
-      >
+      <div className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
         <h3 className={`${styles.heroHeadText} text-[#5f158a]`}>Contact.</h3>
 
         <form
@@ -119,21 +116,18 @@ const Contact = () => {
             {loading ? 'Sending...' : 'Send'}
           </button>
         </form>
-      </motion.div>
+      </div>
 
       {isMobile ? (
         <div
-          variants={slideIn('right', 'tween', 0.2, 1)}
+          // variants={slideIn('right', 'tween', 0.2, 1)}
           className="xl:flex-1 xl:h-auto xl:w-auto mg:h-[550px] h-[350px]"
         >
           <SatelliteCanvas />
         </div>
       ) : (
         <>
-          <div
-            variants={slideIn('right', 'tween', 0.2, 1)}
-            className="xl:flex-1 xl:h-auto xl:w-auto mg:h-[550px] h-[350px]"
-          >
+          <div className="xl:flex-1 xl:h-auto xl:w-auto mg:h-[550px] h-[350px]">
             <SatelliteCanvas />
           </div>
           <StarsCanvas />
