@@ -148,30 +148,6 @@ const experiences = [
 
 const projects = [
   {
-    name: '3D Shirt Page',
-    description:
-      'React-powered web app with Framer Motion for animations, and Tailwind for responsive design and styling. This technological tools results in a stunning visual experience.',
-    tags: [
-      {
-        name: 'React',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'Tailwind',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'FramerMotion',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: shirt,
-    source_code_link:
-      'https://github.com/DiegoGarea/reactjs-3d-Shirt-threejs-valtio-tailwind',
-    link_live:
-      'https://diegogarea.github.io/reactjs-3d-Shirt-threejs-valtio-tailwind/',
-  },
-  {
     name: 'Metaverse',
     description:
       'Next.js-powered web app with Framer Motion used for animation and Tailwind used for responsive & styling. These technologie tools make it look amazing',
@@ -201,6 +177,10 @@ const projects = [
       {
         name: 'React',
         color: 'blue-text-gradient',
+      },
+      {
+        name: 'API',
+        color: 'green-text-gradient',
       },
       {
         name: 'CSS',
@@ -272,6 +252,30 @@ const projects = [
     image: modernbank,
     source_code_link: 'https://github.com/DiegoGarea/reactjs-bank-modern',
     link_live: 'https://diegogarea.github.io/reactjs-bank-modern/',
+  },
+  {
+    name: '3D Shirt Page',
+    description:
+      'React-powered web app with Framer Motion for animations, and Tailwind for responsive design and styling. This technological tools results in a stunning visual experience.',
+    tags: [
+      {
+        name: 'React',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Tailwind',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'FramerMotion',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: shirt,
+    source_code_link:
+      'https://github.com/DiegoGarea/reactjs-3d-Shirt-threejs-valtio-tailwind',
+    link_live:
+      'https://diegogarea.github.io/reactjs-3d-Shirt-threejs-valtio-tailwind/',
   },
   {
     name: 'ATM simulator',
