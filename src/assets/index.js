@@ -33,6 +33,7 @@ import shirt from './shirt.webp';
 import atm from './atm.webp';
 import rockpaperscissors from './rockpaperscissors.webp';
 import youtube from './youtube.webp';
+import supabasefetch from './supabasefetch.webp';
 
 import instagram from './socialnetworks/instagram.png';
 import mygithub from './socialnetworks/mygithub.png';
@@ -70,6 +71,7 @@ export {
   atm,
   rockpaperscissors,
   youtube,
+  supabasefetch,
   instagram,
   mygithub,
   linkedin,

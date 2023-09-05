@@ -23,6 +23,7 @@ import {
   atm,
   rockpaperscissors,
   youtube,
+  supabasefetch,
   threejs,
   instagram,
   mygithub,
@@ -189,8 +190,26 @@ const projects = [
       },
     ],
     image: metaverse,
-    source_code_link: 'https://github.com/DiegoGarea/NextJs-metaverse',
-    link_live: 'https://diegogarea.github.io/NextJs-metaverse/',
+    source_code_link: 'https://github.com/DiegoGarea/metaversus',
+    link_live: 'https://diegogarea.github.io/metaversus/',
+  },
+  {
+    name: 'Supabase REST API',
+    description:
+      'Supabase is a versatile REST API that empowers developers to create, manage, and manipulate... used (GET, POST, PATCH, and DELETE).',
+    tags: [
+      {
+        name: 'React',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'CSS',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: supabasefetch,
+    source_code_link: 'https://github.com/DiegoGarea/React-Supabase-fetch',
+    link_live: 'https://diegogarea.github.io/React-Supabase-fetch/',
   },
   {
     name: 'Movie Search',
@@ -306,24 +325,6 @@ const projects = [
     ],
     image: youtube,
     source_code_link: 'https://github.com/DiegoGarea/HTML-CSS-YouTube-Clone',
-    link_live: 'https://diegogarea.github.io/HTML-CSS-YouTube-Clone/',
-  },
-  {
-    name: 'Youtube Clone',
-    description:
-      'This YouTube-clone exemplifies the dynamic fusion of CSS and HTML, crafting visually stunning websites with only this two powerfull tools.',
-    tags: [
-      {
-        name: 'HTML',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'CSS',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: youtube,
-    source_code_link: 'https://github.com/DiegoGarea/React-Supabase-fetch',
     link_live: 'https://diegogarea.github.io/HTML-CSS-YouTube-Clone/',
   },
 ];

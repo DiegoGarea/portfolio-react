@@ -40,10 +40,12 @@ const Hero = () => {
         </>
       )}
 
-      <div className="absolute max-[400px]:top-[93%] bottom-32 w-full flex justify-center items-center">
+      <div className="absolute max-[400px]:top-[93%] bottom-[60px] w-full flex justify-center items-center">
         <a href="#about">
           {isMobile ? (
-            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+            ''
+          ) : (
+            <div className="w-[35px] h-[60px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
               <motion.div
                 animate={{
                   y: [0, 24, 0],
@@ -56,8 +58,6 @@ const Hero = () => {
                 className="w-3 h-3 rounded-full bg-secondary mb-1"
               />
             </div>
-          ) : (
-            ''
           )}
         </a>
       </div>
