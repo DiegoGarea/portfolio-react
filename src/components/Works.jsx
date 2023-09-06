@@ -34,6 +34,7 @@ const ProjectCard = ({
             onClick={() => window.open(link_live, '_blank')}
           >
             <img
+              loading="lazy"
               src={image}
               alt={name}
               className="w-full h-full object-cover rounded-2xl"
@@ -58,6 +59,7 @@ const ProjectCard = ({
             className="bg-black w-10 h-10 rounded-full border-[1px] border-black flex justify-center items-center cursor-pointer hover:border-white"
           >
             <img
+              loading="lazy"
               src={github}
               alt="github"
               className="w-1/2 h-1/2 object-contain"

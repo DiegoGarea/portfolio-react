@@ -15,7 +15,7 @@ const SocialNetwork = ({title, icon, link}) => {
         className="w-10 h-10 max-[420px]:w-[35px] max-[420px]:h-[35px] mx-3 cursor-pointer flex"
         onClick={() => window.open(link, '_blank')}
       >
-        <img src={icon} alt={title} className="object-contain" />
+        <img loading="lazy" src={icon} alt={title} className="object-contain" />
       </div>
     </motion.footer>
   );

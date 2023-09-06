@@ -5,7 +5,7 @@ import {styles} from '../styles';
 import {MoonCanvas} from './canvas';
 import {StarsCanvas} from '../components';
 import {useMobileCheck} from '../utils/isMobileCheck';
-import Planet from './mobile-gif/Planet';
+import MoonPlanet from './mobile-gif/Planet';
 
 const Hero = () => {
   const isMobile = useMobileCheck();
@@ -31,7 +31,7 @@ const Hero = () => {
       </div>
       {isMobile ? (
         <div className="self-center mt-[120px]">
-          <Planet />
+          <MoonPlanet />
         </div>
       ) : (
         <>

@@ -19,6 +19,7 @@ const ExperienceCard = ({experience}) => {
       icon={
         <div className="bg-black rounded-full flex justify-center items-center w-full h-full">
           <img
+            loading="lazy"
             src={experience.icon}
             alt={experience.icon}
             className="w-[75%] h-[75%] object-contain"

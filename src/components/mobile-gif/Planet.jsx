@@ -1,12 +1,12 @@
 // import React from 'react';
 import {gifmoon} from '../../assets';
 
-const Planet = () => {
+const MoonPlanet = () => {
   return (
     <div>
-      <video src={gifmoon} loop autoPlay muted />
+      <video src={gifmoon} loop autoPlay muted playsInline />
     </div>
   );
 };
 
-export default Planet;
+export default MoonPlanet;

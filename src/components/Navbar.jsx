@@ -23,6 +23,7 @@ const Navbar = () => {
           }}
         >
           <img
+            loading="lazy"
             src={blueplanet}
             alt="blueplanet"
             className="w-9 h-9 object-contain"
@@ -50,6 +51,7 @@ const Navbar = () => {
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
+            loading="lazy"
             src={toggle ? close : menu}
             alt="menu"
             className="w-[28px] h-[28px] object-contain cursor-pointer"
