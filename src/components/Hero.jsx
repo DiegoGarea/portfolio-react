@@ -66,9 +66,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-<motion.footer
-  variants={fadeIn('', '', 0.25, 1)}
-  initial="hidden"
-  whileInView="show"
-></motion.footer>;

@@ -4,7 +4,7 @@ import {gifmoon} from '../../assets';
 const MoonPlanet = () => {
   return (
     <div>
-      <video src={gifmoon} loop autoPlay muted playsInline />
+      <img src={gifmoon} alt="moonplanet" />
     </div>
   );
 };

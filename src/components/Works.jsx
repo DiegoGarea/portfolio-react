@@ -1,11 +1,9 @@
 import Tilt from 'react-parallax-tilt';
-// import {motion} from 'framer-motion';
 
 import {styles} from '../styles';
 import {github} from '../assets';
 import {SectionWrapper} from '../hoc';
 import {projects} from '../constants';
-// import {fadeIn} from '../utils/motion';
 
 const ProjectCard = ({
   name,
@@ -50,7 +48,7 @@ const ProjectCard = ({
           <div className="mt-4 flex gap-2">
             {tags.map((tag) => (
               <p key={tag.name} className={`text=[14px] ${tag.color}`}>
-                &middot; {tag.name}
+                {tag.name}
               </p>
             ))}
           </div>
@@ -79,10 +77,7 @@ const Works = () => {
       </div>
 
       <div className="w-full flex">
-        <p
-          // variants={fadeIn('', '', 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
+        <p className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
           Presenting a selection of my projects that show my experience. Each
           project is accompanied by concise descriptions of technologies I used
           and links to code repositories and live demonstrations.

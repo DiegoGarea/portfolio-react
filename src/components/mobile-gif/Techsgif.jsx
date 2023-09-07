@@ -4,7 +4,7 @@ const Techsgif = () => {
   return (
     <div>
       <div>
-        <video src={giftech} loop autoPlay muted />
+        <img src={giftech} alt="techs" />
       </div>
     </div>
   );
