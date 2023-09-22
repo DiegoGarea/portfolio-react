@@ -123,7 +123,7 @@ const experiences = [
     icon: planet2,
     iconBg: '#E6DEDD',
     points: [
-      "With a nice grasp of CSS and and understanding of Tailwind, I've continuously up to create refined web designs that enhance user experiences. These skills are integral to my ongoing journey in web development, working seamlessly alongside my HTML knowledge. As an advocate of perpetual learning, I'm dedicated to staying current with industry trends and continuously bolstering my CSS and Tailwind capabilities.",
+      "With a nice grasp of CSS and understanding of Tailwind, These skills are integral to my ongoing journey in web development, working seamlessly alongside my HTML knowledge. As an advocate of perpetual learning, I'm dedicated to staying current with industry trends and continuously bolstering my CSS and Tailwind capabilities.",
     ],
   },
   {
@@ -141,7 +141,7 @@ const experiences = [
     icon: planet4,
     iconBg: '#E6DEDD',
     points: [
-      'As a Front-End Developer, I have skills in creating web applications with React.js, employing a diverse range of technologies such as Framer Motion, Three.js, React Router, Canvas, Tilt, Supabase, and many others. My primary focus on implementing responsive designs and ensuring cross-browser compatibility to deliver exceptional user experiences. I continually explore and learn to enhance my skills every day to become a better developer.',
+      'As a Front-End Developer, I create web apps with React.js and various technologies like Framer Motion, Three.js, React Router, Canvas, Tilt, Supabase, and more. My focus is on responsive design and cross-browser compatibility for exceptional user experiences. I continually learn and improve to become a better developer',
     ],
   },
 ];

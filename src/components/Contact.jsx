@@ -126,12 +126,10 @@ const Contact = () => {
           <SatelliteCanvas />
         </div>
       ) : (
-        <>
-          <div className="xl:flex-1 xl:h-auto xl:w-auto mg:h-[550px] h-[350px]">
-            <SatelliteCanvas />
-          </div>
+        <div className="xl:flex-1 xl:h-auto xl:w-auto mg:h-[550px] h-[350px]">
+          <SatelliteCanvas />
           <StarsCanvas />
-        </>
+        </div>
       )}
     </div>
   );

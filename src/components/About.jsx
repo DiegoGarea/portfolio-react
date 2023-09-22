@@ -46,8 +46,8 @@ const About = () => {
       </div>
 
       <p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[28px]">
-        Hello! and welcome to my front-end portfolio. Here, you'll find a
-        collection of my work that showcases my skills in web design and
+        Hello! I'm Diego and welcome to my front-end portfolio. Here, you'll
+        find a collection of my work that showcases my skills in web design and
         development. My dedication to staying updated with the latest industry
         trends ensures that I bring fresh and innovative approaches to every
         project.
