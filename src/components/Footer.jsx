@@ -39,8 +39,8 @@ const Footer = () => {
               whileInView="show"
               className="max-[420px]:text-[12px]"
             >
-              diego G. G. <span className="text-[#853eaf]"> | </span> portfolio
-              <span className="text-[#853eaf]"> - </span> 2023
+              Diego G. G. <span className="text-[#853eaf]"> | </span> Portfolio
+              <span className="text-[#853eaf]"> - </span> 2024
             </motion.p>
           </div>
 
